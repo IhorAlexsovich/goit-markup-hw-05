@@ -56,7 +56,7 @@ img{
   bottom: 0;
   background: #2196F3;
   border-radius: 2px;
-  opacity: 1;
+  
 }
 .link-portfolio{
   position: relative;
@@ -71,7 +71,7 @@ img{
   bottom: 0;
   background: #2196F3;
   border-radius: 2px;
-  opacity: 1;
+  
 }
 
 /*header*/
@@ -131,15 +131,15 @@ img{
   text-align: center;
   justify-content: center;
   align-items: center;
-  
-  
+
 }
 .link-contact,
 .link-portfolio,
 .link-studio,
 .contacts-mail-links,
 .contacts-tel-links{
-  
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   padding: 32px 0;
   
 }
@@ -163,7 +163,7 @@ img{
 .contacts-mail-links,
 .contacts-tel-links{
   color: #757575;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   
 }
 .navigation-links .link:hover,
@@ -206,6 +206,7 @@ img{
   margin-top: 30px;
   outline: 1px solid #EEEEEE;
   width: 100%;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-image:hover .portfolio-overlay{
   transform:translateY(0) ;
@@ -501,14 +502,14 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-social-item + .team-social-item{
   margin-left: 10px;
 }
 .team-social-icon{
   fill: #AFB1B8;
-  
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link:hover,
@@ -555,10 +556,11 @@ img{
   align-items: center;
   width: 170px;
   height: 92px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-icon{
   fill: #AFB1B8;
-  
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-link:hover,
 .customer-link:focus{
@@ -597,7 +599,10 @@ img{
   border-radius: 4px;
   color: var(--brand-color);
   margin-right: 8px; 
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .button-portfolio:hover,
@@ -712,6 +717,7 @@ img{
 }
 .contact-link{
   color: #757575;
+  
 }
 .list-contact .link:hover,
 .list-contact .link:focus{
@@ -743,10 +749,12 @@ img{
   color: #fff;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   } 
   .maps-item{
     
     margin-bottom: 9px;
+    
   }
   .mail-item{
     margin-bottom: 9px;
@@ -760,6 +768,7 @@ img{
   line-height: 24px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
  
   .footer-right{
@@ -790,7 +799,7 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .footer-social-icon{
     fill: #F5F4FA;
@@ -815,7 +824,7 @@ img{
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 .backdrop{
   position: absolute;
@@ -824,6 +833,7 @@ img{
   width: 100%;
   height: 1024px;
   background: rgba(0, 0, 0, 0.2);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden{
